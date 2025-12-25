@@ -3,13 +3,29 @@ package util;
 import java.sql.*;
 
 public class JdbcUtil {
-    private static final String driver = "com.mysql.jdbc.Driver";
+    private static final String[] DRIVERS = {"com.mysql.cj.jdbc.Driver", "com.mysql.jdbc.Driver"};
     private static final String url =
-            "jdbc:mysql://localhost:3306/shoppingsystem?characterEncoding=utf-8";//连接字符串
+            "jdbc:mysql://localhost:3306/shoppingsystem?useUnicode=true&characterEncoding=utf-8&useSSL=false&serverTimezone=Asia/Shanghai&allowPublicKeyRetrieval=true";//连接字符串
     private static final String user = "root";
     private static final String password = "123456";
 
     private static Connection connection;
+
+    static {
+        boolean loaded = false;
+        for (String driver : DRIVERS) {
+            try {
+                Class.forName(driver);
+                loaded = true;
+                break;
+            } catch (ClassNotFoundException ignored) {
+                // 继续尝试下一个驱动
+            }
+        }
+        if (!loaded) {
+            System.err.println("数据库驱动加载失败: 未找到可用的 MySQL 驱动类，请确认依赖是否存在");
+        }
+    }
 
     /**
      * 建立连接
@@ -18,11 +34,7 @@ public class JdbcUtil {
     public static Connection getConnection() {
         Connection conn = null;
         try {
-            Class.forName(driver);//通过反射机制加载驱动
             conn = DriverManager.getConnection(url, user, password);//获得连接
-        } catch (ClassNotFoundException e) {
-            System.err.println("数据库驱动加载失败: " + e.getMessage());
-            e.printStackTrace();
         } catch (SQLException throwables) {
             System.err.println("数据库连接失败: " + throwables.getMessage());
             throwables.printStackTrace();
