@@ -117,178 +117,139 @@
 			<a href="#"><img src="png/phone0.png" alt=""></a>
 		</div>
 		<div class="right">
-			<a href="./page/goods.jsp?goods_id=101" onclick="return onClick()">
+			<a href="#">
 				<div>
-					<%
-						goods = goodsService.find(101);
-					%>
-					<div class="images"><img src="<%=goods.getImage() != null ? goods.getImage() : ""%>" alt=""></div>
+					<div class="images"><img src="./png/other1.png" alt=""></div>
 					<div class="name">
-						<h3><%=goods.getName() != null ? goods.getName() : "商品名称"%></h3>
+						<h3>HUAWEI MateBook X</h3>
 					</div>
 					<div class="explain">
-						<p><%=goods.getInfo_brief() != null ? goods.getInfo_brief() : "商品简介"%></p>
+						<p>晒单赠内胆包+三期免息</p>
 					</div>
 					<div class="price">
-						<div class="newprice">
-							<p><%=goods.getNew_price()%>元</p>
-						</div>
-						<div class="oldprice">
-							<p><%=goods.getOld_price()%>元</p>
+						<div class="nowprice">
+							<p>8999元</p>
 						</div>
 					</div>
 				</div>
 			</a>
-			<a href="./page/goods.jsp?goods_id=102" onclick="return onClick()">
+			<a href="#">
 				<div>
-					<%
-						goods = goodsService.find(102);
-					%>
-					<div class="images"><img src="<%=goods.getImage() != null ? goods.getImage() : ""%>" alt=""></div>
+					<div class="images"><img src="./png/other2.png" alt=""></div>
 				<div class="name">
-					<h3><%=goods.getName() != null ? goods.getName() : "商品名称"%></h3>
+					<h3>HUAWEI MateBook 14</h3>
 				</div>
 				<div class="explain">
-					<p><%=goods.getInfo_brief() != null ? goods.getInfo_brief() : "商品简介"%></p>
+					<p>2K触控屏轻薄本</p>
 				</div>
 				<div class="price">
 					<div class="newprice">
-						<p><%=goods.getNew_price()%>元</p>
+						<p>6399元起</p>
 					</div>
 					<div class="oldprice">
-						<p><%=goods.getOld_price()%>元</p>
+						<p>6999元</p>
 					</div>
 				</div>
 				</div>
 			</a>
-			<a href="./page/goods.jsp?goods_id=103" onclick="return onClick()">
+			<a href="#">
 				<div>
-					<%
-						goods = goodsService.find(103);
-					%>
-					<div class="images"><img src="<%=goods.getImage() != null ? goods.getImage() : ""%>" alt=""></div>
+					<div class="images"><img src="./png/other3.png" alt=""></div>
 				<div class="name">
-					<h3><%=goods.getName() != null ? goods.getName() : "商品名称"%></h3>
+					<h3>荣耀猎人游戏本 V700</h3>
 				</div>
 				<div class="explain">
-					<p><%=goods.getInfo_brief() != null ? goods.getInfo_brief() : "商品简介"%></p>
+					<p>强劲游戏性能</p>
 				</div>
 				<div class="price">
 					<div class="newprice">
-						<p><%=goods.getNew_price()%>元</p>
+						<p>7499元起</p>
 					</div>
 					<div class="oldprice">
-						<p><%=goods.getOld_price()%>元</p>
+						<p>7999元</p>
 					</div>
 				</div>
 				</div>
 			</a>
-			<a href="./page/goods.jsp?goods_id=104" onclick="return onClick()">
+			<a href="#">
 				<div>
-					<%
-						goods = goodsService.find(104);
-					%>
-					<div class="images"><img src="<%=goods.getImage() != null ? goods.getImage() : ""%>" alt=""></div>
+					<div class="images"><img src="./png/other4.png" alt=""></div>
 				<div class="name">
-					<h3><%=goods.getName() != null ? goods.getName() : "商品名称"%></h3>
+					<h3>HUAWEI MateBook D 14</h3>
 				</div>
 				<div class="explain">
-					<p><%=goods.getInfo_brief() != null ? goods.getInfo_brief() : "商品简介"%></p>
+					<p>多屏协同180度开合</p>
 				</div>
 				<div class="price">
-					<div class="newprice">
-						<p><%=goods.getNew_price()%>元</p>
-					</div>
-					<div class="oldprice">
-						<p><%=goods.getOld_price()%>元</p>
+					<div class="nowprice">
+						<p>5299元</p>
 					</div>
 				</div>
 				</div>
 			</a>
-			<a href="./page/goods.jsp?goods_id=105" onclick="return onClick()">
+			<a href="#">
 				<div>
-					<%
-						goods = goodsService.find(105);
-					%>
-					<div class="images"><img src="<%=goods.getImage() != null ? goods.getImage() : ""%>" alt=""></div>
+					<div class="images"><img src="./png/other6.png" alt=""></div>
 				<div class="name">
-					<h3><%=goods.getName() != null ? goods.getName() : "商品名称"%></h3>
+					<h3>HUAWEI MatePad 10.8</h3>
 				</div>
 				<div class="explain">
-					<p><%=goods.getInfo_brief() != null ? goods.getInfo_brief() : "商品简介"%></p>
+					<p>享三期免息</p>
 				</div>
 				<div class="price">
-					<div class="newprice">
-						<p><%=goods.getNew_price()%>元</p>
-					</div>
-					<div class="oldprice">
-						<p><%=goods.getOld_price()%>元</p>
+					<div class="nowprice">
+						<p>2399元</p>
 					</div>
 				</div>
 				</div>
 			</a>
-			<a href="./page/goods.jsp?goods_id=106" onclick="return onClick()">
+			<a href="#">
 				<div>
-					<%
-						goods = goodsService.find(106);
-					%>
-					<div class="images"><img src="<%=goods.getImage() != null ? goods.getImage() : ""%>" alt=""></div>
+					<div class="images"><img src="./png/other7.png" alt=""></div>
 				<div class="name">
-					<h3><%=goods.getName() != null ? goods.getName() : "商品名称"%></h3>
+					<h3>HUAWEI MatePad Pro</h3>
 				</div>
 				<div class="explain">
-					<p><%=goods.getInfo_brief() != null ? goods.getInfo_brief() : "商品简介"%></p>
+					<p>享三期免息</p>
 				</div>
 				<div class="price">
 					<div class="newprice">
-						<p><%=goods.getNew_price()%>元</p>
+						<p>3799元起</p>
 					</div>
 					<div class="oldprice">
-						<p><%=goods.getOld_price()%>元</p>
+						<p>3999元</p>
 					</div>
 				</div>
 				</div>
 			</a>
-			<a href="./page/goods.jsp?goods_id=107" onclick="return onClick()">
+			<a href="#">
 				<div>
-					<%
-						goods = goodsService.find(107);
-					%>
-					<div class="images"><img src="<%=goods.getImage() != null ? goods.getImage() : ""%>" alt=""></div>
+					<div class="images"><img src="./png/other8.png" alt=""></div>
 				<div class="name">
-					<h3><%=goods.getName() != null ? goods.getName() : "商品名称"%></h3>
+					<h3>[Wifi6+]荣耀平板V6</h3>
 				</div>
 				<div class="explain">
-					<p><%=goods.getInfo_brief() != null ? goods.getInfo_brief() : "商品简介"%></p>
+					<p>现货速发</p>
 				</div>
 				<div class="price">
-					<div class="newprice">
-						<p><%=goods.getNew_price()%>元</p>
-					</div>
-					<div class="oldprice">
-						<p><%=goods.getOld_price()%>元</p>
+					<div class="nowprice">
+						<p>2798元</p>
 					</div>
 				</div>
 				</div>
 			</a>
-			<a href="./page/goods.jsp?goods_id=108" onclick="return onClick()">
+			<a href="#">
 				<div>
-					<%
-						goods = goodsService.find(108);
-					%>
-					<div class="images"><img src="<%=goods.getImage() != null ? goods.getImage() : ""%>" alt=""></div>
+					<div class="images"><img src="./png/other9.png" alt=""></div>
 				<div class="name">
-					<h3><%=goods.getName() != null ? goods.getName() : "商品名称"%></h3>
+					<h3>华为畅享平板 2</h3>
 				</div>
 				<div class="explain">
-					<p><%=goods.getInfo_brief() != null ? goods.getInfo_brief() : "商品简介"%></p>
+					<p>享三期免息</p>
 				</div>
 				<div class="price">
-					<div class="newprice">
-						<p><%=goods.getNew_price()%>元</p>
-					</div>
-					<div class="oldprice">
-						<p><%=goods.getOld_price()%>元</p>
+					<div class="nowprice">
+						<p>1799元</p>
 					</div>
 				</div>
 				</div>
